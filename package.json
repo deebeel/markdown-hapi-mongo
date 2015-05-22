@@ -2,7 +2,7 @@
   "name": "markdown-hapi-mongo",
   "version": "1.0.0",
   "description": "demo",
-  "main": "index.js",
+  "main": "node ./bin/start.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha -b  -w --reporter spec --harmony"
   },
@@ -24,12 +24,17 @@
   "dependencies": {
     "hapi": "*",
     "showdown": "*",
-    "mongodb": "*"
+    "joi": "*",
+    "async": "*",
+    "mongoose": "*"
   },
   "author": "s.markov",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/deebeel/markdown-hapi-mongo/issues"
   },
-  "homepage": "https://github.com/deebeel/markdown-hapi-mongo"
+  "homepage": "https://github.com/deebeel/markdown-hapi-mongo",
+  "engines": {
+    "node": ">= 0.12.x"
+  }
 }
