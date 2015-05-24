@@ -19,13 +19,13 @@
     "should": "*",
     "mocha": "*",
     "rewire": "*",
-    "mockery": "*"
+    "superagent":"*"
   },
   "dependencies": {
     "hapi": "*",
     "showdown": "*",
-    "joi": "*",
     "async": "*",
+    "boom": "*",
     "mongoose": "*"
   },
   "author": "s.markov",
