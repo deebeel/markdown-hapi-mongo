@@ -2,11 +2,3 @@ sudo: false
 language: node_js
 node_js:
   - "0.12"
-deploy:
-  provider: npm
-  email: deedeeua@gmail.com
-  on:
-    branch: master
-    tags: false
-    repo: deebeel/markdown-hapi-mongo
-    node: "0.12"
