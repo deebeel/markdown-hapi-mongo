@@ -4,7 +4,7 @@
   "description": "demo",
   "main": "node ./bin/start.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha -b  -w --reporter spec --harmony"
+    "test": "./node_modules/.bin/mocha --reporter spec --harmony"
   },
   "repository": {
     "type": "git",
