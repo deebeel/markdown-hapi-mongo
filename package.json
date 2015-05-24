@@ -2,8 +2,9 @@
   "name": "markdown-hapi-mongo",
   "version": "1.0.0",
   "description": "demo",
-  "main": "node ./bin/start.js",
+  "main": "index.js",
   "scripts": {
+    "start":"node --harmony ./bin/server.js",
     "test": "./node_modules/.bin/mocha --reporter spec --harmony"
   },
   "repository": {
