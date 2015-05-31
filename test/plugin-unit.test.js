@@ -60,13 +60,13 @@ describe("#plugin-unit", ()=> {
         describe("#markdownToHtml", ()=> {
             var markdownToHtml = plugin.__get__("markdownToHtml");
             it("should wrap markdown text with h1 tag", ()=> {
-                markdownToHtml("#hello, markdown!").should.be.eql("<h1 id=\"hellomarkdown\">hello, markdown!</h1>")
+                markdownToHtml("#hello, markdown!").should.be.eql("<h1>hello, markdown!</h1>")
             });
             it("should wrap markdown text with h2 tag", ()=> {
-                markdownToHtml("##hello, markdown!").should.be.eql("<h2 id=\"hellomarkdown\">hello, markdown!</h2>")
+                markdownToHtml("##hello, markdown!").should.be.eql("<h2>hello, markdown!</h2>")
             });
             it("should wrap markdown text with h3 tag", ()=> {
-                markdownToHtml("###hello, markdown!").should.be.eql("<h3 id=\"hellomarkdown\">hello, markdown!</h3>")
+                markdownToHtml("###hello, markdown!").should.be.eql("<h3>hello, markdown!</h3>")
             });
             it("should wrap markdown text with p tag", ()=> {
                 markdownToHtml("hello, markdown!").should.be.eql("<p>hello, markdown!</p>")
@@ -87,7 +87,7 @@ describe("#plugin-unit", ()=> {
             it("should convert a markdown to a html", ()=> {
                 var markdown = "#hello, markdown!";
                 makeDataForModel(markdown).should.be.eql({
-                    html: "<h1 id=\"hellomarkdown\">hello, markdown!</h1>",
+                    html: "<h1>hello, markdown!</h1>",
                     markdown: markdown
                 })
             });
