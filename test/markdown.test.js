@@ -46,14 +46,14 @@ describe("#markdown", ()=> {
         });
     });
 
-    describe("#lineWrapper",()=>{
-        var lineWrapper = markdown.__get__("lineWrapper");
+    describe("#wrap",()=>{
+        var wrap = markdown.__get__("wrap");
         it("should wrap the marked text to the <em>",()=>{
-            lineWrapper("text *wrapped text* text *wrapped text*").should.be.eql("text <em>wrapped text</em> text <em>wrapped text</em>");
+            wrap("text *wrapped text* text *wrapped text*").should.be.eql("text <em>wrapped text</em> text <em>wrapped text</em>");
         });
 
         it("should wrap the marked text to the <a href>",()=>{
-            lineWrapper("text [example link](http://www.google.com) text").should.be.eql("text <a href=\"http://www.google.com\">example link</a> text");
+            wrap("text [example link](http://www.google.com) text").should.be.eql("text <a href=\"http://www.google.com\">example link</a> text");
         });
     });
 });
