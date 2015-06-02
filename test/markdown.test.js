@@ -19,7 +19,7 @@ describe("#markdown", ()=> {
             markdown.toHtml("sometext").should.be.eql("<p>sometext</p>");
         });
         it("should map lines to correct tags", ()=> {
-            markdown.toHtml("[a_text](http://p_text)\n###**h3_text**\n##*h2_text*\n#h1_text").should.be.eql("<p><a href=\"http://p_text\">a_text</a></p>\n<h3><strong>h3_text</strong></h3>\n<h2><em>h2_text</em></h2>\n<h1>h1_text</h1>");
+            markdown.toHtml("[a_text](http://p_text)\n###**h3_text**\n##*h2_text*\n#h1_text").should.be.eql("<p><a href=\"http://p_text\">a_text</a></p><h3><strong>h3_text</strong></h3><h2><em>h2_text</em></h2><h1>h1_text</h1>");
         });
     });
 
